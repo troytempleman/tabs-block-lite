@@ -1,0 +1,88 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "tt/tab",
+  "version": "0.1.0",
+  "title": "Tab",
+  "category": "text",
+  "description": "A block that displays a list item that can be selected to show its associated section of content.",
+  "keywords": [
+    "tabs",
+    "tab",
+    "panel",
+    "panels",
+    "block",
+    "show",
+    "hide",
+    "sections",
+    "accessible",
+    "responsive"
+  ],
+  "textdomain": "tab",
+  "parent": [
+    "tt/tabs"
+  ],
+  "attributes": {
+    "uid": {
+      "type": "string"
+    },
+    "textAlign": {
+      "type": "string"
+    },
+    "activeTab": {
+      "type": "number",
+      "default": 0
+    },
+    "headerButtonText": {
+      "type": "string"
+    }
+  },
+  "usesContext": [
+    "tabs/activeTab"
+  ],
+  "example": {
+    "attributes": {
+      "headerButtonText": "Lorem ipsum"
+    },
+    "innerBlocks": [
+      {
+        "name": "core/paragraph",
+        "attributes": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus neque vel elementum fringilla. In sed leo in orci porta posuere. Ut dictum justo non dolor hendrerit, sit amet vulputate nisl porta. Maecenas posuere, lacus nec tincidunt dictum, nisl nulla rhoncus augue, non luctus lectus eros congue tellus. Nunc at malesuada sapien."
+        }
+      }
+    ]
+  },
+  "supports": {
+    "className": false,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true,
+        "link": true
+      }
+    },
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

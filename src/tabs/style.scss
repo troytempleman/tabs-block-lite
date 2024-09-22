@@ -1,0 +1,36 @@
+// Editor and front end styles
+
+.wp-block-tt-tabs {
+
+	.wp-block-tt-tabs-header {
+ 		position: relative;
+		display: flex;
+		overflow-x: auto;
+		z-index: 1;
+		padding: 0 0 0 1px;
+		margin-bottom: -1px;
+		
+		.wp-block-tt-tab-header,
+		.wp-block-tt-tab-header-button {
+			display: flex;
+		}		
+		.wp-block-tt-tab-header-button {
+			all: unset;
+			outline: revert;
+			cursor: pointer;
+			background-color: #fff;
+			border: #000 solid 1px;
+		    padding: 0.75rem 1rem 0.75rem 1rem;
+		    margin-left: -1px;
+			
+			&[aria-selected='true'] {
+				border-bottom: #fff solid 1px;
+			}
+		}
+	}
+	.wp-block-tt-tab-panel {
+	    background-color: #fff;
+		border: #000 solid 1px;
+	    padding: 1rem 2rem 1rem 2rem;
+	}
+}
