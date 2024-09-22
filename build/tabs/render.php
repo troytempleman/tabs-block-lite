@@ -1,5 +1,10 @@
 <?php
 
+// Exit if accessed directly 
+if( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 // Attributes
 $text_align = isset( $attributes['textAlign'] ) ? $attributes['textAlign'] : null;
 $header_justification = isset( $attributes['headerJustification'] ) ? $attributes['headerJustification'] : null;
@@ -25,6 +30,6 @@ foreach ( $block->inner_blocks as $inner_block ) {
 $block_content .= '</ul>';
 $block_content .= wp_kses_post( $content );
 $block_content .= '</div>';
-echo $block_content;
+echo wp_kses_post( $block_content );
 
 ?>

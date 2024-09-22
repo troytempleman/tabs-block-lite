@@ -5,7 +5,7 @@
 **Tags:** tabs, tab, panel, panels, block, show, hide, sections, accessible, responsive \
 **Requires at least:** 6.0 \
 **Tested up to:** 6.4.1 \
-**Stable tag:** 0.1.0 \
+**Stable tag:** 0.1.1 \
 **Requires PHP:** 7.4 \
 **License:** GPLv2 or later \
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
@@ -18,6 +18,8 @@ Tabs Block Lite adds an accessible and responsive Tabs block to the block editor
 
 Ideal for condensing longform or complex content. Also useful for reducing page scrolling.
 
+Upgrade to Pro at [https://troytempleman.com/wordpress/blocks/tabs-block/](https://troytempleman.com/wordpress/blocks/tabs-block/).
+
 ### Features
 
 * Accessible
@@ -27,6 +29,7 @@ Ideal for condensing longform or complex content. Also useful for reducing page 
   * Block alignment
   * Text alignment
   * Item justification
+* Styles
   * Color
      * Text
      * Background
@@ -68,6 +71,10 @@ Ideal for condensing longform or complex content. Also useful for reducing page 
   * Pills **[Pro]** 
   * Underline **[Pro]** 
 
+### Demo
+
+[https://troytempleman.com/wordpress/blocks/tabs-block/](https://troytempleman.com/wordpress/blocks/tabs-block/)
+
 ### HTML
 
 Tabs Block Lite will output a Tabs block with the following HTML structure:
@@ -87,7 +94,7 @@ Tabs Block Lite will output a Tabs block with the following HTML structure:
 	
 ## Support
 
-If you need help with Tabs Block Lite, please submit a ticket on the [Support]https://wordpress.org/support/plugin/tabs-block-lite) forum.
+If you need help with Tabs Block Lite, please submit a ticket on the [Support](https://wordpress.org/support/plugin/tabs-block-lite) forum.
 
 ## Donate
 
@@ -215,6 +222,14 @@ Please see **Installation** section.
 5. Tabs block on the front end.
 
 ## Changelog
+
+### 0.1.1 - April 2, 2024
+
+* Added: Security improvement by adding `wp_kses_post` filter to `$block_content` in `build/tab/render.php`, `build/tabs/render.php`, `src/tab/render.php`, and `src/tabs/render.php`.
+* Added: Code to prevent direct file access in `build/tab/render.php`, `build/tabs/render.php`, `src/tab/render.php`, and `src/tabs/render.php`.
+* Updated: Version in `build/tab/block.json`, `build/tabs/block.json`, `src/tab/block.json`, and `src/tabs/block.json`.
+* Updated: Stable tag and changelog in `readme.md` and `readme.txt`.
+* Updated: Version in `tabs-block-lite.php` and `package.json`.
 
 ### 0.1.0 - November 15, 2023
 

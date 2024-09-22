@@ -3,14 +3,14 @@
  * Plugin Name:       Tabs Block Lite
  * Plugin URI:        https://github.com/troytempleman/tabs-block-lite
  * Description:       A block that displays horizontal list items that can be selected to show their associated sections of content.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Requires at least: 6.0
  * Requires PHP:      7.0
  * Author:            Troy Templeman
- * Author URI:        http://troytempleman.com
+ * Author URI:        https://troytempleman.com
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       tabs-block
+ * Text Domain:       tabs-block-lite
  * Domain Path:       /languages
  */
 
@@ -20,7 +20,7 @@ if( ! defined( 'ABSPATH' ) ) {
 }
 
 // Register block
-function tabs_block_register() {
+function tabs_block_lite_register() {
 	
 	// Tabs
 	register_block_type( 
@@ -31,4 +31,4 @@ function tabs_block_register() {
 		__DIR__ . '/build/tab'
 	);
 }
-add_action( 'init', 'tabs_block_register' );
+add_action( 'init', 'tabs_block_lite_register' );
