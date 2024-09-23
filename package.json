@@ -1,6 +1,6 @@
 {
 	"name": "tabs-block",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A block that displays horizontal list items that can be selected to show their associated sections of content.",
 	"author": "Troy Templeman <troy@troytempleman.com> (https://troytempleman.com/)",
 	"license": "GPL-2.0-or-later",

@@ -2,11 +2,11 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
 	"name": "tt/tab",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"title": "Tab",
 	"category": "text",
 	"description": "A block that displays a list item that can be selected to show its associated section of content.",
-	"keywords": [ "tabs", "tab", "panel", "panels", "block", "show", "hide", "sections", "accessible", "responsive" ],
+	"keywords": [ "tabs", "tab", "accessible", "responsive" ],
 	"textdomain": "tab",
 	"parent": [ "tt/tabs" ],
 	"attributes":{
