@@ -3,7 +3,7 @@
  * Plugin Name:       Tabs Block Lite
  * Plugin URI:        https://github.com/troytempleman/tabs-block-lite
  * Description:       A block that displays horizontal list items that can be selected to show their associated sections of content.
- * Version:           0.1.1
+ * Version:           0.1.2
  * Requires at least: 6.0
  * Requires PHP:      7.0
  * Author:            Troy Templeman
