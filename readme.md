@@ -2,7 +2,7 @@
 
 **Contributors:** troytempleman \
 **Donate link:** https://www.buymeacoffee.com/troytempleman \
-**Tags:** tabs, tab, block, accessible, responsive \
+**Tags:** tabs, tab, accessible, responsive \
 **Requires at least:** 6.0 \
 **Tested up to:** 6.6.2 \
 **Stable tag:** 0.1.2 \
